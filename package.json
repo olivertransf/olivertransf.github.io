@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://olivertransf.github.io",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -16,7 +15,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://olivertransf.github.io",
+  "homepage": ".",
   "eslintConfig": {
     "extends": [
       "react-app",
