@@ -1,26 +1,25 @@
 import React from "react";
 
 const Skills = () => {
-  const skills = [
-    { name: "JavaScript", icon: "⚡" },
-    { name: "React", icon: "⚛️" },
-    { name: "Node.js", icon: "🟢" },
-    { name: "Python", icon: "🐍" },
-    { name: "HTML/CSS", icon: "🌐" },
-    { name: "Git", icon: "📚" },
-    { name: "SQL", icon: "🗄️" },
-    { name: "AWS", icon: "☁️" },
-  ];
+  const skills = ["React", "JavaScript", "Python"];
 
   return (
-    <section id="skills">
-      <div className="section-container">
-        <h2 className="section-title">Skills & Technologies</h2>
-        <div className="skills-grid">
+    <section id="skills" className="py-20 bg-black text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-light text-white mb-4 tracking-wider">
+            SKILLS
+          </h2>
+          <div className="w-24 h-px bg-white mx-auto"></div>
+        </div>
+
+        <div className="flex flex-wrap gap-4 justify-center">
           {skills.map((skill, index) => (
-            <div key={index} className="skill-card">
-              <div className="skill-icon">{skill.icon}</div>
-              <h3>{skill.name}</h3>
+            <div
+              key={index}
+              className="border border-white px-4 py-2 hover:bg-white hover:text-black transition-all duration-300 tracking-wider"
+            >
+              {skill}
             </div>
           ))}
         </div>
