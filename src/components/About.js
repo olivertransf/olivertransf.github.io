@@ -10,7 +10,7 @@ const About = () => {
     "C#",
     "Unity",
     "Pytorch",
-    "Muescore",
+    "MuseScore",
     "Logic Pro X",
     "Soccer",
     "React",
