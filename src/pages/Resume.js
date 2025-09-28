@@ -14,7 +14,7 @@ const Resume = () => {
         <div className="max-w-5xl mx-auto">
           <div className="border border-white/20 p-4 hover:border-white transition-all duration-300">
             <iframe
-              src="/resume.pdf"
+              src="/Resume.pdf"
               className="w-full h-screen"
               title="Resume PDF"
             />
