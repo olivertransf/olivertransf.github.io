@@ -107,19 +107,18 @@ const Projects = () => {
     return (
       <section
         id="projects"
-        className="py-20 bg-gradient-to-br from-black to-black"
+        className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-black to-black"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-white mb-4 tracking-wider">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-4 tracking-wider">
               MY PROJECTS
             </h2>
-            <div className="w-24 h-px bg-white mx-auto"></div>
-            <div className="w-24 h-px bg-white mx-auto"></div>
+            <div className="w-16 sm:w-24 h-px bg-white mx-auto"></div>
           </div>
-          <div className="flex justify-center items-center py-20">
+          <div className="flex flex-col sm:flex-row justify-center items-center py-12 sm:py-20 gap-4">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
-            <span className="ml-4 text-lg text-white/80">
+            <span className="text-base sm:text-lg text-white/80">
               Loading projects...
             </span>
           </div>
@@ -132,21 +131,20 @@ const Projects = () => {
     return (
       <section
         id="projects"
-        className="py-20 bg-gradient-to-br from-black to-black"
+        className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-black to-black"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-white mb-4 tracking-wider">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-4 tracking-wider">
               MY PROJECTS
             </h2>
-            <div className="w-24 h-px bg-white mx-auto"></div>
-            <div className="w-24 h-px bg-white mx-auto"></div>
+            <div className="w-16 sm:w-24 h-px bg-white mx-auto"></div>
           </div>
-          <div className="text-center py-20">
-            <div className="text-red-500 text-lg mb-4">
+          <div className="text-center py-12 sm:py-20">
+            <div className="text-red-500 text-base sm:text-lg mb-4">
               ❌ Error loading projects
             </div>
-            <p className="text-white/80">{error}</p>
+            <p className="text-white/80 text-sm sm:text-base">{error}</p>
           </div>
         </div>
       </section>
@@ -156,34 +154,34 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-20 bg-gradient-to-br from-black to-black"
+      className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-black to-black"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light text-white mb-4 tracking-wider">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-4 tracking-wider">
             MY PROJECTS
           </h2>
-          <div className="w-24 h-px bg-white mx-auto mb-6"></div>
-          <p className="text-lg text-white/80 max-w-2xl mx-auto">
+          <div className="w-16 sm:w-24 h-px bg-white mx-auto mb-6"></div>
+          <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto px-4">
             Here are some of my recent projects from GitHub. Each one represents
             a learning journey and a step forward in my development skills.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {repos.map((repo) => (
             <div
               key={repo.id}
-              className="group border border-white/20 rounded-2xl p-6 shadow-xl border border-slate-700/20 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="group border border-white/20 rounded-2xl p-4 sm:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
             >
               {/* Project Header */}
               <div className="flex items-start justify-between mb-4">
-                <div className="flex items-center space-x-3">
-                  <div className="text-3xl">
+                <div className="flex items-center space-x-2 sm:space-x-3 flex-1 min-w-0">
+                  <div className="text-2xl sm:text-3xl flex-shrink-0">
                     {getProjectEmoji(repo.name, repo.description)}
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white group-hover:text-indigo-600 transition-colors duration-300">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-base sm:text-xl font-bold text-white group-hover:text-indigo-600 transition-colors duration-300 truncate">
                       {repo.name
                         .replace(/-/g, " ")
                         .replace(/\b\w/g, (l) => l.toUpperCase())}
@@ -191,20 +189,20 @@ const Projects = () => {
                     {repo.language && (
                       <div className="flex items-center space-x-2 mt-1">
                         <div
-                          className={`w-3 h-3 rounded-full ${getLanguageColor(
+                          className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full ${getLanguageColor(
                             repo.language
                           )}`}
                         ></div>
-                        <span className="text-sm text-white/80">
+                        <span className="text-xs sm:text-sm text-white/80">
                           {repo.language}
                         </span>
                       </div>
                     )}
                   </div>
                 </div>
-                <div className="flex items-center space-x-1 text-white/60">
+                <div className="flex items-center space-x-1 text-white/60 flex-shrink-0 ml-2">
                   <svg
-                    className="w-4 h-4"
+                    className="w-3 h-3 sm:w-4 sm:h-4"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -214,34 +212,36 @@ const Projects = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-sm">{repo.stargazers_count}</span>
+                  <span className="text-xs sm:text-sm">
+                    {repo.stargazers_count}
+                  </span>
                 </div>
               </div>
 
               {/* Project Description */}
-              <p className="text-white/80 mb-4 line-clamp-3">
+              <p className="text-sm sm:text-base text-white/80 mb-4 line-clamp-3">
                 {repo.description ||
                   "No description available for this project."}
               </p>
 
               {/* Project Stats */}
-              <div className="flex items-center justify-between text-sm text-white/60 mb-6">
-                <div className="flex items-center space-x-4">
+              <div className="flex items-center justify-between text-xs sm:text-sm text-white/60 mb-4 sm:mb-6">
+                <div className="flex items-center space-x-3 sm:space-x-4">
                   <span>⭐ {repo.stargazers_count}</span>
                   <span>🍴 {repo.forks_count}</span>
                 </div>
-                <span className="text-xs">
+                <span className="text-xs hidden sm:inline">
                   Updated {new Date(repo.updated_at).toLocaleDateString()}
                 </span>
               </div>
 
               {/* Project Links */}
-              <div className="flex space-x-3">
+              <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
                 <a
                   href={repo.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 border border-white text-white text-center py-2 px-4 font-light tracking-wider hover:bg-white hover:text-black transition-all duration-300"
+                  className="flex-1 border border-white text-white text-center py-2 px-3 sm:px-4 font-light tracking-wider hover:bg-white hover:text-black transition-all duration-300 text-sm"
                 >
                   View Code
                 </a>
@@ -250,7 +250,7 @@ const Projects = () => {
                     href={repo.homepage}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 border border-white/30 text-white/70 text-center py-2 px-4 font-light tracking-wider hover:border-white hover:text-white transition-all duration-300"
+                    className="flex-1 border border-white/30 text-white/70 text-center py-2 px-3 sm:px-4 font-light tracking-wider hover:border-white hover:text-white transition-all duration-300 text-sm"
                   >
                     Live Demo
                   </a>
@@ -261,15 +261,15 @@ const Projects = () => {
         </div>
 
         {/* View More Button */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-10 sm:mt-12">
           <a
             href="https://github.com/olivertransf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-black to-black text-white font-semibold rounded-full hover:from-indigo-500 hover:to-purple-500 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center px-6 sm:px-8 py-3 bg-gradient-to-r from-black to-black text-white font-semibold rounded-full hover:from-indigo-500 hover:to-purple-500 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base"
           >
             <svg
-              className="w-5 h-5 mr-2"
+              className="w-4 h-4 sm:w-5 sm:h-5 mr-2"
               fill="currentColor"
               viewBox="0 0 20 20"
             >

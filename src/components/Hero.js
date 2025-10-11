@@ -101,45 +101,45 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-black/30 animate-pulse"></div>
 
       <div className="text-center z-10 px-4 sm:px-6 lg:px-8">
-        <div className="mb-16">
-          <div className="inline-block px-4 py-2 border border-white/30 mb-8">
-            <span className="text-white/70 text-sm tracking-wider">
+        <div className="mb-8 sm:mb-12 md:mb-16">
+          <div className="inline-block px-3 sm:px-4 py-2 border border-white/30 mb-6 sm:mb-8">
+            <span className="text-white/70 text-xs sm:text-sm tracking-wider">
               PORTFOLIO 2024
             </span>
           </div>
         </div>
 
-        <h1 className="text-6xl sm:text-7xl lg:text-8xl font-light text-white mb-8 leading-none tracking-tight">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-white mb-6 sm:mb-8 leading-none tracking-tight">
           <span className="block">OLIVER</span>
           <span className="block text-white/60">TRAN</span>
         </h1>
 
-        <div className="w-24 h-px bg-white mx-auto mb-8"></div>
+        <div className="w-16 sm:w-24 h-px bg-white mx-auto mb-6 sm:mb-8"></div>
 
-        <p className="text-lg text-white/60 mb-12 max-w-2xl mx-auto leading-relaxed tracking-wide">
+        <p className="text-base sm:text-lg md:text-xl text-white/60 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed tracking-wide">
           SOFTWARE ENGINEER
           <br />
           CELLIST
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 justify-center items-center">
           <Link
             to="/contact"
-            className="px-8 py-3 border border-white text-white hover:bg-white hover:text-black transition-all duration-300 tracking-wider"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 border border-white text-white hover:bg-white hover:text-black transition-all duration-300 tracking-wider text-sm sm:text-base"
           >
             CONTACT ME
           </Link>
 
           <Link
             to="/projects"
-            className="px-8 py-3 border border-white/30 text-white/70 hover:border-white hover:text-white transition-all duration-300 tracking-wider"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 border border-white/30 text-white/70 hover:border-white hover:text-white transition-all duration-300 tracking-wider text-sm sm:text-base"
           >
             VIEW WORK
           </Link>
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden sm:block">
           <div className="w-px h-12 bg-white/30 animate-pulse"></div>
         </div>
       </div>
