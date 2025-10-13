@@ -37,21 +37,10 @@ const About = () => {
           <div className="lg:col-span-8 space-y-6">
             <div className="border border-white/20 p-6 sm:p-8 hover:border-white transition-all duration-300">
               <p className="text-base sm:text-lg text-white/80 leading-relaxed mb-4 sm:mb-6 tracking-wide">
-                Hi, I'm Oliver! I'm someone who loves exploring different ways
-                to learn, create, and grow. I spend a lot of time coding—whether
-                it's building projects in Unity, experimenting with Python, or
-                just messing around with ideas until something cool takes shape.
-                I enjoy challenges, but I also like keeping things fun and
-                finding creative ways to solve problems.
+                placeholder
               </p>
               <p className="text-base sm:text-lg text-white/80 leading-relaxed mb-4 sm:mb-6 tracking-wide">
-                Outside of tech, music is a big part of my life. I've been
-                playing the cello for over ten years, and it's taught me a lot
-                about patience, practice, and expression. Between music and
-                coding, I've found a balance between logic and creativity, and
-                that mix really shapes who I am. No matter what I'm working on,
-                I try to bring curiosity, energy, and a little bit of myself
-                into it.
+                placeholder
               </p>
             </div>
           </div>

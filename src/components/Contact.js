@@ -20,8 +20,7 @@ const Contact = () => {
               LET'S CONNECT
             </h3>
             <p className="text-sm sm:text-base text-white/80 mb-6 sm:mb-8 tracking-wide leading-relaxed">
-              Ready to work together or just want to say hello? Click the button
-              below to send me an email directly.
+              placeholder
             </p>
             <a
               href="mailto:olivertransf@gmail.com?subject=Hello from your portfolio&body=Hi Oliver,%0D%0A%0D%0AI saw your portfolio and wanted to get in touch.%0D%0A%0D%0A"

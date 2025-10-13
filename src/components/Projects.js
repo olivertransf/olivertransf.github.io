@@ -163,8 +163,7 @@ const Projects = () => {
           </h2>
           <div className="w-16 sm:w-24 h-px bg-white mx-auto mb-6"></div>
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto px-4">
-            Here are some of my recent projects from GitHub. Each one represents
-            a learning journey and a step forward in my development skills.
+            placeholder
           </p>
         </div>
 
