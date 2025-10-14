@@ -2,22 +2,22 @@ import React from "react";
 
 const About = () => {
   const skills = [
-    "Cello",
-    "Python",
-    "Playwright",
-    "Postgres",
-    "Swift",
-    "C#",
-    "Unity",
-    "Pytorch",
-    "MuseScore",
-    "Logic Pro X",
-    "Soccer",
-    "React",
-    "TypeScript",
-    "Ukulele",
-    "Guitar",
-    "Piano",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
   ];
 
   return (
